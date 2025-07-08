@@ -203,10 +203,7 @@ def get_gpt_questions(category, difficulty, num):
     # genai.configure(api_key=config("GEMINI_API_KEY"))
     genai.configure(api_key=settings.GOOGLE_API_KEY)
 
-    # client =  OpenAI(
-    #         api_key= "AIzaSyCzq_JdNPHaGzzbdPnIQ7So43a88-Oiycw", 
-    #         base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
-    # )
+
 
     model = genai.GenerativeModel("gemini-2.0-flash")
     response = model.generate_content(prompt)
