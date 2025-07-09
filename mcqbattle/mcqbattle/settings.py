@@ -24,7 +24,7 @@ GOOGLE_API_KEY = config("GOOGLE_API_KEY")
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-#s4!kya=vg#c1*v(o-3#muu8zdi)2eur5f&5%jfeyn0pj%uzx*'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -154,10 +154,10 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # This is Vite's default dev URL
 ]
 
-PUSHER_APP_ID = "2018281"
-PUSHER_KEY = "e8afefdffd5b0356fe9f"
-PUSHER_SECRET = "265b865cab8688f0a348"
-PUSHER_CLUSTER = "ap2"
+PUSHER_APP_ID = config("PUSHER_APP_ID")
+PUSHER_KEY = config("PUSHER_KEY")
+PUSHER_SECRET = config("PUSHER_SECRET")
+PUSHER_CLUSTER = config("PUSHER_CLUSTER")
 
 PUSHER_CLIENT  = pusher.Pusher(
     app_id=PUSHER_APP_ID,
