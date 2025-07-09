@@ -37,7 +37,12 @@ npm run dev
 ```
 
 ## Screenshots
+### Create or Join Room
 ![CreateJoin Room](https://github.com/user-attachments/assets/51f1daff-1696-4437-83db-4081b199ea75)
+
+### Waiting Room
 ![Waiting Room](https://github.com/user-attachments/assets/adb20eaf-12bc-4a90-81f2-d283624dc8f4)
+
+### Game Room
 ![GameRoom](https://github.com/user-attachments/assets/82ac02b5-b1d4-4fb2-8d3c-cb94ab94f9d4)
 
